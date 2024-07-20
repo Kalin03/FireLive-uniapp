@@ -61,7 +61,7 @@ aliyun:
        "mp-weixin" : {
         "appid" : "",
     }
- ```
+```
 小程序图表使用echarts工具开发
 
 ### 注意事项
@@ -70,7 +70,7 @@ aliyun:
   可将echarts依赖分离出主包
     echarts依赖目录：health-uniapp\uni_modules\lime-echart\static\echarts.min.js
   或将项目中的静态文件static上传至服务器
-  
+
 2、小程序在上传用户头像时使用前端上传至阿里oss服务器
   需要配置服务器信息
     文件目录：health-uniapp\subpkg\components\js_sdk\jason-alioss-upload\oss.js
@@ -79,9 +79,9 @@ aliyun:
       const url = ''
       const OSSAccessKeyId = ''
       const OssAccesskeySercet= ''
- ```
+```
   或发送至后端上传
-  
+
 3、小程序首页使用“优设标题黑”字体，并在项目health-uniapp\App.vue中全局设置
   字体文件目录：FrontEndCode\font\YouSheBiaoTiHei-2.ttf
 ```css
@@ -94,7 +94,7 @@ aliyun:
       } */
     </style>
       
- ```
+```
 
 ## 数据库
 
@@ -102,5 +102,10 @@ aliyun:
 
 ## 页面展示
 
-<img src="https://www.kalin.asia/ftp/firelive-img/1.jpg" alt="display" style="zoom:24%;" /><img src="https://www.kalin.asia/ftp/firelive-img/2.jpg" alt="display" style="zoom:23%;" /><img src="https://www.kalin.asia/ftp/firelive-img/3.jpg" alt="display" style="zoom:23%;" /><img src="https://www.kalin.asia/ftp/firelive-img/4.jpg" alt="display" style="zoom:24%;" />
+<img src="https://www.kalin.asia/ftp/firelive-img/1.jpg" alt="display" style="width: 24%;" /><img src="https://www.kalin.asia/ftp/firelive-img/2.jpg" alt="display" style="width:24%;" /><img src="https://www.kalin.asia/ftp/firelive-img/3.jpg" alt="display" style="width:24%;" /><img src="https://www.kalin.asia/ftp/firelive-img/4.jpg" alt="display" style="width:24%;" />
 
+## 制作不易 感谢支持(记得备注)
+
+<img src="https://www.kalin.asia/ftp/firelive-img/6.jpg" alt="display" style="width: 24%;" />
+
+<img src="https://www.kalin.asia/ftp/firelive-img/7.jpg" alt="display" style="width: 24%;" />
