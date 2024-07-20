@@ -15,6 +15,8 @@ FireLive-uniapp
 │   │   ├── ...
 ├── MySql-sql
 │   ├── ...
+├── md-img
+│   ├── ...
 ├── README.md
 ```
 
@@ -44,3 +46,16 @@ aliyun:
 ### 注意事项
 
 1、在health-uniapp\src\main\java\com\kalin\utils目录下ChatGLM.java文件里面需要单独将ChatGLM的API_SECRET_KEY写在变量上。
+
+## 前端
+
+
+
+## 数据库
+
+在MySql-sql目录下有三个文件，health-uniapp.sql、food_table.sql、sport_table.sql，分别对应整个数据库的结构，食物信息，运动信息（用户可选的食物和运动）
+
+## 页面展示
+
+<img src="md-img\1.jpg" alt="1" style="zoom:23%;" /><img src="md-img\2.jpg" alt="1" style="zoom:23%;" /><img src="md-img\3.jpg" alt="1" style="zoom:23%;" /><img src="md-img\4.jpg" alt="1" style="zoom:23%;" />
+
