@@ -1,0 +1,20 @@
+{
+    "id": "jason-alioss-upload",
+    "name": "阿里云存储OSS前端直接上传(全端通用) - 前端JASON",
+    "displayName": "阿里云存储OSS前端直接上传(全端通用) - 前端JASON",
+    "version": "1.0.0",
+    "description": "阿里云oss存储前端直传，不需要后端鉴权及签名；h5、小程序、app全端通用；支持vue2、vue3",
+    "keywords": [
+        "对象存储",
+        "oss",
+        "文件上传",
+        "阿里云",
+        "oss上传"
+    ],
+    "dcloudext": {
+        "category": [
+            "JS SDK",
+            "通用 SDK"
+        ]
+    }
+}

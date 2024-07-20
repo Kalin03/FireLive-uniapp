@@ -1,0 +1,141 @@
+<template>
+	<web-view class="lime-echart" ref="limeEchart" :style="[customStyle]" :webview-styles="[webviewStyles]"
+		src="/uni_modules/lime-echart/static/uvue.html?v=1011">
+	</web-view>
+</template>
+
+<script lang="uts">
+	import { Echarts } from './uvue';
+	type EchartsResolve = (value : Echarts) => void
+	export default {
+		name: 'l-echart',
+		props: {
+			webviewStyles: {
+				type: Object
+			},
+			customStyle: {
+				type: Object
+			},
+			isDisableScroll: {
+				type: Boolean,
+				default: false
+			},
+			isClickable: {
+				type: Boolean,
+				default: true
+			},
+			enableHover: {
+				type: Boolean,
+				default: false
+			},
+			beforeDelay: {
+				type: Number,
+				default: 30
+			}
+		},
+		data() {
+			return {
+				finished: false,
+				map: [] as EchartsResolve[],
+				context: null as UniWebViewElement | null,
+				// el: null as  UniWebViewElement | null,
+				chart: null as Echarts | null
+			};
+		},
+		computed: {
+
+		},
+		unmounted() {
+
+		},
+		created() {
+
+		},
+		mounted() {
+			this.createSelectorQuery().select('.lime-echart').boundingClientRect(_ => {
+				const context = this.$el as UniWebViewElement
+				this.context = context
+				// context.addEventListener('error', (_ : WebViewErrorEvent) => { })
+				// context.addEventListener('loading', (_ : WebViewLoadingEvent) => { })
+				context.addEventListener('loaded', (event : WebViewLoadedEvent) => {
+					this.finished = true
+					event.stopPropagation()
+					event.preventDefault()
+					this.trigger()
+					this.$emit('finished')
+				})
+				
+			}).exec()
+
+		},
+		methods: {
+			_next() {
+				if (this.chart == null) {
+					console.warn(`组件还未初始化，请先使用 init`)
+					return
+				}
+			},
+			setOption(option : UTSJSONObject) {
+				this._next()
+				this.chart?.setOption(option);
+			},
+			showLoading() {
+				this._next()
+				this.chart?.showLoading();
+			},
+			hideLoading() {
+				this._next()
+				this.chart?.hideLoading();
+			},
+			clear() { 
+				this._next()
+				this.chart?.clear();
+			},
+			dispose() {
+				this._next()
+				this.chart?.dispose();
+			},
+			resize(size:UTSJSONObject) { 
+				this._next()
+				this.chart?.resize(size);
+			},
+			canvasToTempFilePath(opt: UTSJSONObject) {
+				this._next()
+				this.chart?.canvasToTempFilePath(opt)
+			},
+			trigger() {
+				if (this.finished) {
+					if (this.chart == null) {
+						this.chart = new Echarts(this.context!)
+					}
+					while (this.map.length > 0) {
+						const resolve = this.map.pop() as EchartsResolve
+						resolve(this.chart!)
+					}
+				}
+			},
+			init() : Promise<Echarts> {
+				return new Promise((resolve) => {
+					this.map.push(resolve)
+					this.trigger()
+				})
+			},
+			init(callback : (chart : Echarts) => void) : Promise<Echarts> {
+				if (this.chart !== null) {
+					callback(this.chart!)
+				} else {
+					console.warn('echarts 未加载完成，您可以延时一下')
+				}
+				return new Promise((resolve) => {
+					this.map.push(resolve)
+					this.trigger()
+				})
+			}
+		}
+	};
+</script>
+<style lang="scss">
+	.lime-echart {
+		flex: 1;
+	}
+</style>

@@ -1,0 +1,18 @@
+view {
+  box-sizing: border-box;
+}
+.a-link {
+  color: #007aff;
+  cursor:pointer;
+}
+.no-data {
+  color: #868686;
+}
+.icon-data {
+  &::before{
+    margin-right: 5px ;
+  }
+}
+:root {
+  --theme: #8f60df;
+}

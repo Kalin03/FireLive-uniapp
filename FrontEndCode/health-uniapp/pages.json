@@ -1,0 +1,161 @@
+{
+	"pages": [{
+		"path": "pages/index/index",
+		"style": {
+			"navigationStyle": "custom"
+		}
+	}, {
+		"path": "pages/community/community",
+		"style": {
+			"navigationStyle": "custom",
+			"enablePullDownRefresh": true
+		}
+	}, {
+		"path": "pages/user/user",
+		"style": {
+			"navigationStyle": "custom"
+
+		}
+	}],
+
+	"subPackages": [
+		{
+			"root": "subpkg",
+			"name": "subpkg",
+			"pages": [{
+				"path": "health_record/health_record",
+				"style": {
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "health_data/health_data",
+				"style": {
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "diet_weekly/diet_weekly",
+				"style": {
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "motion_weekly/motion_weekly",
+				"style": {
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "help_feedback/help_feedback",
+				"style": {
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "achievement/achievement",
+				"style": {
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "user_info/user_info",
+				"style": {
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "diet_record/diet_record",
+				"style": {
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "motion_record/motion_record",
+				"style": {
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "checkIn_record/checkIn_record",
+				"style": {
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "BMI_record/BMI_record",
+				"style": {
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "articleDetails/articleDetails",
+				"style": {
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "publishArticle/publishArticle",
+				"style": {
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "communitySearch/communitySearch",
+				"style": {
+					"navigationStyle": "custom"
+				}
+			},
+			{
+				"path": "searchAricle/searchAricle",
+				"style": {
+					"navigationStyle": "custom"
+				}
+			}
+		]
+	}],
+
+	"tabBar": {
+		"color": "#494949",
+		"selectedColor": "#aa55ff",
+		"fontSize": "30px",
+		"backgroundColor": "#fff",
+		"height": "60px",
+		"borderStyle": "black",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"text": "首页",
+				"iconPath": "static/icon/index.png",
+				"selectedIconPath": "static/icon/index_focus.png"
+			},
+			{
+				"pagePath": "pages/community/community",
+				"text": "社区",
+				"iconPath": "static/icon/comm.png",
+				"selectedIconPath": "static/icon/comm_focus.png"
+			},
+			{
+				"pagePath": "pages/user/user",
+				"text": "我的",
+				"iconPath": "static/icon/my.png",
+				"selectedIconPath": "static/icon/my_focus.png"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"app-plus": {
+			"pullToRefresh": {
+				"style": "circle",
+				"color": "#8f60df"
+			},
+			"statusbar": {
+				"immersed": false
+			},
+			"bounce": "none"
+		}
+	}
+}
