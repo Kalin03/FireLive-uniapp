@@ -15,8 +15,6 @@ FireLive-uniapp
 │   │   ├── ...
 ├── MySql-sql
 │   ├── ...
-├── md-img
-│   ├── ...
 ├── README.md
 ```
 
@@ -43,6 +41,10 @@ aliyun:
     BUCKET_NAME: 
 ```
 
+### 启动
+
+写好配置文件，把注意事项做了，启动HealthUniappApplication就ok了
+
 ### 注意事项
 
 1、在health-uniapp\src\main\java\com\kalin\utils目录下ChatGLM.java文件里面需要单独将ChatGLM的API_SECRET_KEY写在变量上。
@@ -57,5 +59,5 @@ aliyun:
 
 ## 页面展示
 
-<img src="md-img\1.jpg" alt="1" style="zoom:23%;" /><img src="md-img\2.jpg" alt="1" style="zoom:23%;" /><img src="md-img\3.jpg" alt="1" style="zoom:23%;" /><img src="md-img\4.jpg" alt="1" style="zoom:23%;" />
+<img src="https://www.kalin.asia/ftp/firelive-img/1.jpg" alt="display" style="zoom:24%;" /><img src="https://www.kalin.asia/ftp/firelive-img/2.jpg" alt="display" style="zoom:23%;" /><img src="https://www.kalin.asia/ftp/firelive-img/3.jpg" alt="display" style="zoom:23%;" /><img src="https://www.kalin.asia/ftp/firelive-img/4.jpg" alt="display" style="zoom:24%;" />
 
