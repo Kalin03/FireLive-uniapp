@@ -4,6 +4,7 @@
 
 ## 项目目录结构
 
+```txt
 FireLive-uniapp
 │
 ├── BackEndCode
@@ -15,6 +16,7 @@ FireLive-uniapp
 ├── MySql-sql
 │   ├── ...
 ├── README.md
+```
 
 ## 后端
 
