@@ -57,7 +57,7 @@ aliyun:
 直接使用HBuilderX打开health-uniapp项目即可运行
 小程序需要配置微信小程序AppID
 ```json
-    // 文件目录：health-uniapp\manifest.json
+    /* 文件目录：health-uniapp\manifest.json */
        "mp-weixin" : {
         "appid" : "",
     }
@@ -70,6 +70,7 @@ aliyun:
   可将echarts依赖分离出主包
     echarts依赖目录：health-uniapp\uni_modules\lime-echart\static\echarts.min.js
   或将项目中的静态文件static上传至服务器
+  
 2、小程序在上传用户头像时使用前端上传至阿里oss服务器
   需要配置服务器信息
     文件目录：health-uniapp\subpkg\components\js_sdk\jason-alioss-upload\oss.js
@@ -80,6 +81,7 @@ aliyun:
       const OssAccesskeySercet= ''
  ```
   或发送至后端上传
+  
 3、小程序首页使用“优设标题黑”字体，并在项目health-uniapp\App.vue中全局设置
   字体文件目录：FrontEndCode\font\YouSheBiaoTiHei-2.ttf
 ```css
