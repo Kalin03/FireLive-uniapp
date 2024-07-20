@@ -102,7 +102,7 @@ aliyun:
 
 ## 页面展示
 
-<img src="https://www.kalin.asia/ftp/firelive-img/1.jpg" alt="display" style="width: 24%;" /><img src="https://www.kalin.asia/ftp/firelive-img/2.jpg" alt="display" style="width:24%;" /><img src="https://www.kalin.asia/ftp/firelive-img/3.jpg" alt="display" style="width:24%;" /><img src="https://www.kalin.asia/ftp/firelive-img/4.jpg" alt="display" style="width:24%;" />
+<img src="https://www.kalin.asia/ftp/firelive-img/1.webp" alt="display" style="width: 25%;" /><img src="https://www.kalin.asia/ftp/firelive-img/2.webp" alt="display" style="width:25%;" /><img src="https://www.kalin.asia/ftp/firelive-img/3.webp" alt="display" style="width:25%;" /><img src="https://www.kalin.asia/ftp/firelive-img/4.webp" alt="display" style="width:25%;" />
 
 ## 制作不易 感谢支持(记得备注)
 
