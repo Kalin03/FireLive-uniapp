@@ -1,6 +1,5 @@
 <!-- 本示例未包含完整css，获取外链css请参考上文，在hello uni-app项目中查看 -->
-<template>
-	<view class="contain">
+<template >
 		<Navbar :showLeft="false" title="社区"></Navbar>
 		<view>
 			<view class="community-top">
@@ -62,8 +61,6 @@
 				</view>
 			</view>
 		</view>
-	</view>
-	
 </template>
 <script setup>
 	import {
@@ -184,18 +181,6 @@
 	});
 </script>
 <style>
-	.contain{
-		width:100vw;
-		height:100vh;
-		overflow-y:scroll
-	}
-	
-	.contain::-webkit-scrollbar{
-		width:0;
-		height:0;
-		color:transparent;
-		display:none
-	}
 	
 	.community-top {
 		margin-top: 20rpx;
