@@ -17,6 +17,7 @@ public class LoginInterceptors implements HandlerInterceptor {
         String token = request.getHeader("Authorization");
         //判断token是否存在
         if(token == null || token.equals("")){
+            response.setStatus(401);
             return false;
         }
         try {
