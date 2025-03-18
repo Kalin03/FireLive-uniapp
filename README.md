@@ -102,5 +102,5 @@ aliyun:
 
 ## 页面展示
 
-<img src="https://www.kalin.asia/ftp/firelive-img/1.webp" alt="display" style="width: 25%;" /><img src="https://www.kalin.asia/ftp/firelive-img/2.webp" alt="display" style="width:25%;" /><img src="https://www.kalin.asia/ftp/firelive-img/3.webp" alt="display" style="width:25%;" /><img src="https://www.kalin.asia/ftp/firelive-img/4.webp" alt="display" style="width:25%;" />
-<img src="https://www.kalin.asia/ftp/firelive-img/5.webp" alt="display" style="width:25%;" /><img src="https://www.kalin.asia/ftp/firelive-img/6.webp" alt="display" style="width:25%;" /><img src="https://www.kalin.asia/ftp/firelive-img/7.webp" alt="display" style="width:25%;" />
+<img src="https://www.kalin.asia/ftp/firelive/1.webp" alt="display" style="width: 25%;" /><img src="https://www.kalin.asia/ftp/firelive/2.webp" alt="display" style="width:25%;" /><img src="https://www.kalin.asia/ftp/firelive/3.webp" alt="display" style="width:25%;" /><img src="https://www.kalin.asia/ftp/firelive/4.webp" alt="display" style="width:25%;" />
+<img src="https://www.kalin.asia/ftp/firelive/5.webp" alt="display" style="width:25%;" /><img src="https://www.kalin.asia/ftp/firelive/6.webp" alt="display" style="width:25%;" /><img src="https://www.kalin.asia/ftp/firelive/7.webp" alt="display" style="width:25%;" />
