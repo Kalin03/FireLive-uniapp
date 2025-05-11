@@ -40,7 +40,11 @@ aliyun:
     ENDPOINT: 
     ACCESS_KEY_ID: 
     ACCESS_KEY_SECRET: 
-    BUCKET_NAME: 
+    BUCKET_NAME:
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true #开启驼峰命名和下划线命名的自动转化 不开启会导致无法查询成功
 ```
 
 ### 启动
